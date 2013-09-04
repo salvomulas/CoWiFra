@@ -1,0 +1,85 @@
+#bc {
+	background-color: #dedede;
+	line-height: 30px;
+	border-bottom: solid #ccc 1px;
+}
+
+#bc a, #bc a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#bc a:hover {
+	text-decoration: underline;
+}
+
+.counter {
+	font-weight: bold;
+	font-size: 150%;
+	color: #ffae00;
+}
+
+h1 {
+	padding: 20px 0;
+}
+
+h2 {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+.bottom-space {
+	margin: 0 0 10px 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.teamitem {
+	padding-bottom: 60px;
+}
+
+.tab-content {
+	min-height: 300px;
+}
+
+.hidden {
+	display: none;
+}
+
+.list-padding li {
+	padding: 0px 0px 10px 0px;
+}
+
+input.adminbox {
+	margin: 0 0 2px 0;
+}
+
+.userlist {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.tabbable-space {
+	margin-top: 33px;
+}
+
+.padding-top {
+	padding-top: 40px;
+}
+
+.padding-bottom {
+	padding-bottom: 40px;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+hr {
+	display: block;
+	height: 1px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}

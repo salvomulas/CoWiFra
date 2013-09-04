@@ -1,0 +1,389 @@
+#designer-toolbox {
+    background: #323232;
+    height: 100%;
+    -webkit-box-shadow: 0 0 20px #676767;
+}
+
+    #designer-toolbox h2 {
+        cursor: default;
+        padding: 5px 10px;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: left;
+        color: #e2e2e2;
+        margin: 0 10px 0 5px;
+    }
+
+    #designer-toolbox .toolbox {
+        clear: both;
+        margin: 0 0 20px;
+        padding: 5px 0 0 10px;
+        overflow: hidden;
+    }
+
+
+    #designer-toolbox .toolbox li {
+        list-style: none;
+        font-size: 12px;
+        width: 40px;
+        height: 40px;
+        margin: 4px;
+        float: left;
+        display: block;
+        background-color: #2b2b2b;
+        border-radius: 5px;
+    }
+
+    #designer-toolbox .toolbox li span {
+        padding: 4px 10px;
+        color: #303030;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        cursor: move;
+    }
+
+    #designer-toolbox .toolbox li {
+        background-image: url(../img/designer/icons.png);
+        text-indent: -9999px;
+        overflow: hidden;
+    }
+
+    #designer-toolbox .toolbox .checkbox    { background-position: -40px 0;}
+    #designer-toolbox .toolbox .radio       { background-position: -80px 0;}
+    #designer-toolbox .toolbox .combobox    { background-position: -120px 0;}
+    #designer-toolbox .toolbox .text        { background-position: -160px 0;}
+    #designer-toolbox .toolbox .heading     { background-position: -200px 0;}
+    #designer-toolbox .toolbox .paragraph   { background-position: -240px 0;}
+    #designer-toolbox .toolbox .label       { background-position: -280px 0;}
+    #designer-toolbox .toolbox .table       { background-position: -320px 0;}
+    #designer-toolbox .toolbox .image       { background-position: -360px 0;}
+    #designer-toolbox .toolbox .rectangle   { background-position: -400px 0;}
+    #designer-toolbox .toolbox .circle      { background-position: -440px 0;}
+    
+    
+
+#designer-canvas {
+    background: white url(../img/designer/paper.png);
+    -webkit-box-shadow: 0 0 10px #bebebe;
+    border: 1px solid #d1d1d1;
+    position: relative; /* Very important! Ensures that GUI elements are positioned relative to the canvas and not the window! */
+}
+
+    
+#designer-element-properties {
+    position: relative;
+    display: none;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    margin: 10px 0px 10px;
+    padding: 4px;
+}
+
+    #designer-element-properties form {
+        padding-left: 4px;
+    }
+
+    #designer-element-properties h2 {
+        font-size: 25px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        padding: 2px;
+        color: gray;
+        font-weight: normal;
+    }
+    
+    #designer-element-properties input {
+        width: 100%;
+    }
+
+    #designer-element-properties form .line {
+        float: left;
+        margin-right: 20px;
+        /*padding-bottom: 10px;*/
+    }
+    
+    #designer-element-properties .tools {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+
+.object {
+    position: absolute !important; /* prevent jquery ui draggable position definition */
+    cursor: move;
+    outline: none;
+}
+
+.object input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: text;
+}
+
+.object .button {
+    background-color: #e8e8e8;
+    color: #383838;
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-align: center;
+    font-weight: normal;
+    border: 3px solid #383838;
+}
+
+.object .button input {
+    text-align: center;
+}
+
+.object .checkbox {
+    width: 20px;
+    height: 20px;
+    background-color: #e8e8e8;
+    border: 3px solid #383838;
+    border-radius: 20%;
+}
+
+.object .checkbox.checked:after {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 5px;
+    background: transparent;
+    top: 7px;
+    left: 6px;
+
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.object .checkbox ~ span {
+    min-width: 200px;
+    margin-top: -23px;
+    margin-left: 34px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.object .radio {
+    width: 20px;
+    height: 20px;
+    background-color: #e8e8e8;
+    border: 3px solid #383838;
+    border-radius: 50%;
+}
+
+.object .radio.checked:after {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    content: "";
+    width: 45%;
+    height: 45%;
+    background-color: #5a5a5a;
+    border-radius: 50%;
+}
+
+.object .radio ~ span {
+    min-width: 200px;
+    margin-top: -23px;
+    margin-left: 32px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.object .text-input {
+    height: 100%;
+}
+
+.object .text-input label {
+    font-weight: bold;
+    cursor: move;
+    color: #383838;
+    font-size: 17px;
+}
+
+.object .text-input .input {
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+    border: 3px solid #383838;
+}
+
+.object table {
+    background-color: #e8e8e8;
+    border: 3px solid #383838;
+    width: 100%;
+
+}
+
+.object table td {
+    padding: 5px 10px;
+    border: 1px solid #a2a2a2;
+}
+
+.object table th {
+    text-align: center;
+    padding: 3px 5px;
+    background-color: #383838;
+    color: white;
+}
+
+.object table input {
+    width: 95%;
+    
+    /* Stop bootstrap overwriting style */
+    border: none !important;
+    outline: 0px none !important;
+    box-shadow: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.object .combobox {
+    width: 100%;
+    background-color: #e8e8e8;
+    overflow: hidden;
+    min-width: 120px;
+    border: 3px solid #383838;
+    border-radius: 5px;
+}
+.object .combobox .text {
+    float: left;
+    width: 70%;
+    padding: 3px 5px 3px;
+}
+
+.object .combobox .opener {
+    position: absolute;
+    right: 5px;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 8px 0 8px;
+    border-color: #383838 transparent transparent transparent;
+    text-indent: -9999px;
+}
+
+.object.preview {
+    z-index: 1;
+}
+
+.object.preview .heading {
+    width: 400px;
+}
+
+.object.preview table {
+    width: 250px;
+}
+
+.object .heading {
+    margin: 0;
+}
+
+.object .paragraph {
+    width: 100%;
+}
+
+.object.preview .paragraph {
+    width: 300px;
+}
+
+.object .paragraph p {
+    padding: 5px;
+    margin: 0;
+}
+
+.object .image {
+    background-color: white;
+    border: 2px solid #dedede;
+}
+
+.object .shape {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #383838;
+    border-radius: 0;
+}
+
+.object.circle .shape  {
+    border-radius: 50%;
+}
+
+.ui-resizable-handle {
+    bottom: -4px;
+    right: -4px;
+    border-radius: 50%;
+    background-color: orange;
+    height: 10px;
+    width: 10px;
+    visibility: hidden;
+}
+
+.object:focus .ui-resizable-handle {
+    visibility: visible;
+}
+
+.shape ~ .ui-resizable-handle {
+    right: -5px;
+    bottom: -5px;
+}
+
+.text-input ~ .ui-resizable-handle {
+    right: -9px;
+    bottom: -35px;
+}
+
+
+/* Stop bootstrap overwriting style */
+#designer-canvas .checkbox, .radio {
+    padding-left: 0px !important;
+}
+
+#designer-toolbox .checkbox, .radio {
+    padding-left: 0px !important;
+}
+
+#designer-canvas .label {    
+    background-color: transparent !important;
+    color: black !important;
+    display: inline !important;
+    font-weight: normal !important;
+    line-height: 14px !important;
+    padding: 0px !important;
+    text-shadow: none !important;
+}
+
+#designer-toolbox .preview .label {    
+    background-color: transparent !important;
+    color: black !important;
+    display: inline !important;
+    font-weight: normal !important;
+    line-height: 14px !important;
+    padding: 0px !important;
+    text-shadow: none !important;
+}
+
+#designer-toolbox .label {
+    color: black !important;
+    display: inline !important;
+    font-weight: normal !important;
+    line-height: 14px !important;
+    padding: 0px !important;
+    text-shadow: none !important;
+}
+
+
+/* From designer_h5bp.css */
+.toolbox ul, ol { margin: 1em 0; padding: 0 0 0 40px; }

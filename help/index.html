@@ -1,0 +1,487 @@
+<html>
+
+<head>
+<title>Hilfebereich Web-RE</title>
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style type="text/css">
+.button1, .button2 {
+	width: 30px;
+	height: 20px;
+	background-color: #FFE09C;
+	bottom: 0px;
+	position: fixed;
+	padding: 7px 0 3px 0;
+	text-align: center;
+	border-left: 1px solid #FFCE63;
+	border-top: 1px solid #FFCE63;
+	border-right: 1px solid #FFCE63;
+}
+
+.button1 {
+	left: 4px;
+}
+
+.button2 {
+	right: 4px;
+}
+</style>
+</head>
+
+<body>
+<div class="button1"><a href="#top"><i class="icon-arrow-up icon"></i></a></div>
+<div class="button2"><a href="#top"><i class="icon-arrow-up icon"></i></a></div>
+<div class="row-fluid">
+	<div class="span10 offset1">
+		<h1 id="top">Hilfebereich Web-RE</h1>
+		<p>Hier werden die wichtigsten Funktionen des Web-RE Tools kurz und verst&auml;ndlich vorgestellt.</p>
+		<div class="well">
+			<ul class="unstyled">
+				<li><a href="#register">Registrieren</a></li>
+				<li><a href="#login">Login</a></li>
+				<li><a href="#edit_profile">Profil bearbeiten</a></li>
+				<li><a href="#dashboard">Meine Projekte</a>
+					<ul>
+						<li><a href="#new_project">Neues Projekt erstellen</a></li>
+					</ul>
+				</li>
+				<li><a href="#project_view">Projektansicht</a>
+					<ul>
+						<li><a href="#overview">&Uuml;bersicht</a>
+							<ul>
+								<li><a href="#edit_project">Projektinfos bearbeiten</a></li>
+							</ul>
+						</li>
+						<li><a href="#sketches">Skizzen</a>
+							<ul>
+								<li><a href="#read_description">Beschreibung lesen</a></li>
+								<li><a href="#new_sketch">Neue Skizze erstellen</a></li>
+								<li><a href="#open_sketch">Skizze &ouml;ffnen</a></li>
+								<li><a href="#edit_sketch">Skizze bearbeiten</a></li>
+								<li><a href="#duplicate_sketch">Skizze duplizieren</a></li>
+								<li><a href="#delete_sketch">Skizze l&ouml;schen</a></li>
+							</ul>
+						</li>
+						<li><a href="#rawdata">Rohdaten</a>
+							<ul>
+								<li><a href="#upload_rawdata">Rohdaten hochladen</li>
+							</ul>
+						</li>
+						<li><a href="#team">Team</a>
+							<ul>
+								<li><a href="#edit_team">Team bearbeiten</a></li>
+								<li><a href="#add_user">Benutzer hinzuf&uuml;gen und entfernen</a></li>
+								<li><a href="#add_admin">Administratoren hinzuf&uuml;gen und entfernen</a></li>
+							</ul>
+						</li>
+						<li><a href="#administrate">Administration</a>
+							<ul>
+								<li><a href="#change_owner">Projekteigent&uuml;mer &auml;ndern</a></li>
+								<li><a href="#delete_project">Projekt l&ouml;schen</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#designer">Designer</a>
+					<ul>
+						<li><a href="#add_element">Element zur Skizze hinzuf&uuml;gen</a></li>
+						<li><a href="#remove_element">Element von Skizze entfernen</a></li>
+						<li><a href="#change_layer">Element eine Ebene verschieben</a></li>
+						<li><a href="#change_properties">Elementeigenschaften &auml;ndern</a></li>
+						<li><a herf="#change_color">Elementfarbe &auml;ndern</a></li>
+						<li><a href="#set_border">Elementrahmen setzen / entfernen</a></li>
+						<li><a href="#export_sketch">Skizze exportieren</a></li>
+						<li><a href="#save_sketch">Skizze speichern</a></li>
+					</ul>
+				</li>
+				<li><a href="#authority">Berechtigungen</a>
+					<ul>
+						<li><a href="#user">Benutzer</a></li>
+						<li><a href="#admin">Administrator</a></li>
+						<li><a href="#owner">Projektbesitzer</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+
+
+
+		<h2 id="register">Registrieren</h2>
+		<div class="alert alert-info">Sie k&ouml;nnen sich nur registrieren, wenn Sie nicht angemeldet sind.</div>
+		<p>Um sich zu registrieren, gehen Sie bitte wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Hauptnavigation auf Registrieren (Das Registrierungsformular wird ge&ouml;ffnet)</li>
+			<li>Geben Sie Ihren Wunsch-Benutzernamen ein</li>
+			<li>Geben Sie Ihren Vornamen ein</li>
+			<li>Geben Sie Ihren Nachnamen ein</li>
+			<li>Geben Sie Ihre E-Mail Adresse ein</li>
+			<li>Geben Sie Ihr Passwort ein</li>
+			<li>Geben Sie Ihr Passwort erneut ein, um Tippfehler auszuschliessen</li>
+			<li>Klicken Sie auf Registrieren</li>
+		</ol>
+		<p>Sie werden daraufhin ein E-Mail mit einem Best&auml;tigungslink erhalten. Nachdem Sie diesen Link angeklickt bzw. in Ihrem Browser eingegeben haben, wird Ihr Benutzer freigeschaltet.
+		</p>
+
+
+
+
+
+		<h2 id="login">Login</h2>
+		<div class="alert alert-info">Sie k&ouml;nnen sich erst anmelden, nachdem Ihr Benutzer aktiviert wurde.</div>
+		<p>Um sich anzumelden gehen Sie bitte wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Hauptnavigation auf Login (Das Login Formular &ouml;ffnet sich)</li>
+			<li>Geben Sie Ihren Benutzernamen ein</li>
+			<li>Geben Sie Ihr Passwort ein</li>
+			<li>Klicken Sie auf Login (Sie werden direkt auf <a href="/dashboard" target="_blank">Meine Projekte</a> weitergeleitet)</li>
+		</ol>
+
+
+
+
+
+		<h2 id="edit_profile">Profil bearbeiten</h2>
+		<p>Um Ihr Profil zu bearbeiten gehen Sie bitte wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Hauptnavigation auf Ihren Benutzernamen</li>
+			<li>Klicken Sie auf <a href="/profile/edit" target="_blank">Profil bearbeiten</a></li>
+			<li>&Auml;ndern Sie die gew&uuml;schte Eigenschaft</li>
+			<li>Klicken Sie auf Speichern, um die &Auml;nderungen zu &uuml;bernehmen</li>
+		</ol>
+
+
+
+
+		<h2 id="dashboard">Meine Projekte</h2>
+		<p>Unter <a href="/dashboard" target="_blank">Meine Projekte</a> sehen Sie alle Ihre Projekte auf einen Blick. Die &Uuml;bersicht ist nach den Projektrollen (Besitzer, Administrator und Benutzer) und nach Projektname sortiert.</p>
+
+		<p>Auf der linken Seite sehen Sie Ihre Benutzerstatistik. Diese setzt sich aus folgenden Angaben zusammen.</p>
+
+		<ul>
+			<li>Eigene Projekte (Anzahl der Projekte, die Sie selbst erstellt haben)</li>
+			<li>Projekte, an denen ich mitarbeite (Anzahl der Projekte, die Sie nicht selbst erstellt haben)</li>
+			<li>Eigene Skizzen (Anzahl der Skizzen, die Sie erstellt haben)</li>
+			<li>Skizzen, an denen ich mitarbeite (Anzahl der Skizzen, die Sie nicht selbst erstellt haben)</li>
+		</ul>
+
+		<h3 id="new_project">Neues Projekt erstellen</h3>
+		<p>Um ein neues Projekt zu erstellen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Kicken Sie auf <a href="/dashboard/new_project" target="_blank">Neues Projekt erstellen</a> (Es &ouml;ffnet sich das Formular zur Erstellung eines neuen Projektes)</li>
+			<li>Geben Sie den Projektnamen ein</li>
+			<li>Schreiben Sie einige Stichworte oder S&auml;tze um das Projekt pr&auml;gnant zu beschreiben (Diese k&ouml;nnen sp&auml;ter noch angepasst werden)</li>
+			<li>Erfassen Sie einige Anforderungen (Diese k&ouml;nnen sp&auml;ter noch angepasst werden)</li>
+			<li>F&uuml;gen Sie Benutzer zu Ihrem Projekt hinzu, indem Sie in der Benutzerliste auf "hinzuf&uuml;gen" klicken</li>
+		</ol>
+
+		<div class="alert alert-info">
+			<ol>
+				<li>Sie k&ouml;nnen die Anzeige der Benutzer einschr&auml;nken, in dem Sie die „Benutzer suchen“ Funktion nutzen</li>
+				<li>Wenn Sie die Checkbox markieren, bekommt der entsprechende Benutzer <a href="#admin">Administrator-Berechtigungen</a></li>
+			</ol>
+		</div>
+
+
+
+
+		<h2 id="project_view">Projektansicht</h2>
+		
+		<p>Dies ist die Detailansicht eines Projektes. Auf der Linken Seite sehen Sie die wichtigsten Informationen zum Projekt.</p>
+		<p><b>Informationen</b></p>
+		<ul>
+			<li>Besitzer</li>
+			<li>Teammitglieder (Anzahl der Teammitglieder)</li>
+			<li>Skizzen (Anzahl der in diesem Projekt verf&uuml;gbaren Skizzen)</li>
+			<li>Erstellt am (Datum und Uhrzeit der Erstellung des Projektes)</li>
+			<li>Letzte Aktivit&auml;t (Datum und Uhrzeit der letzten Aktivit&auml;t)</li>
+		</ul>
+		<p><b>Logbuch</b></p>
+		<p>Das Logbuch gibt Auskunft &uuml;ber die letzten 10 &Auml;nderungen am Projekt. So erhalten Sie schnell einen &Uuml;berblick &uuml;ber den Projektstand.</p>
+
+		<h3 id="overview">&Uuml;bersicht</h3>
+		<p>Auf der Projekt&uuml;bersicht werden Ihnen der Name des Projektes und (wenn vorhanden) die Beschreibung sowie bereits erfasste Anforderungen angezeigt.</p>
+
+		<h4 id="edit_project">Projektinfos bearbeiten</h4>
+		<p>Um die Projektinfos zu bearbeiten gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf "Projektinfos bearbeiten" (Es &ouml;ffnet sich das Formular zur Bearbeitung des Projektes)</li>
+			<li>Passen sie die gew&uuml;nschten Bereiche an</li>
+			<li>Klicken Sie auf "Speichern", um die &Auml;nderungen zu &uuml;bernehmen</li>
+		</ol>
+		<div class="alert alert-info">
+			<ul>
+				<li>Ein Benutzer kann lediglich Anforderungen anpassen</li>
+				<li>Ein Administrator kann zus&auml;tzlich Benutzer zum Team hinzuf&uuml;gen und entfernen</li>
+				<li>Ein Projektbesitzer kann zus&auml;tzlich den Projeknamen und die Beschreibung &auml;ndern</li>
+			</ul>
+		</div>
+
+		<h3 id="sketches">Skizzen</h3>
+		<p>Auf diesem Tab sehen Sie eine Liste aller verf&uuml;gbaren Skizzen zu einem Projekt. Wenn noch keine Skizzen erstellt wurden, erhalten Sie diese Information in Form einer blauen Informationsbox.</p>
+
+		<h4 id="read_description">Beschreibung lesen</h4>
+		<p>Um die Beschreibung einer Skizze zu lesen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das Chevron-Symbol neben dem Skizzennamen (Die Skizzenbeschreibung wird ge&ouml;ffnet)</li>
+			<li>Klicken Sie eruneut auf das Chevron-Symbol, um die Beschreibung wieder zu schliessen</li>
+		</ol>
+
+		<h4 id="new_sketch">Neue Skizze erstellen</h4>
+		<p>Um eine neue Skizze zu erstellen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie oben rechts auf "Neue Skizze" (Es &ouml;ffnet sich ein Fenster)</li>
+			<li>Geben Sie einen Namen und eine geeignete Beschreibung ein</li>
+			<li>Klicken Sie auf „Erstellen“ (Ihre Skizze wird angelegt und Sie werden zum Designer weitergeleitet)</li>
+		</ol>
+
+		<h4 id="open_sketch">Skizze &ouml;ffnen</h4>
+		<p>Um eine neue Skizze zu &ouml;ffnen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf den Namen der Skizze (Der Designer &ouml;ffnet sich mit der entsprechenden Skizze)</li>
+		</ol>
+
+		<h4 id="edit_sketch">Skizze bearbeiten</h4>
+		<p>Um eine neue Version einer Skizze aus einer bestehenden Skizze zu erstellen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Liste der Skizzen auf den Knopf "Optionen" (Es &ouml;ffnet sich das Optionsmen&uuml;)</li>
+			<li>Klicken Sie auf "Versionen" (Es &ouml;ffnet sich die Versions&uuml;bersicht)</li>
+			<li>Klicken Sie in der Liste der Versionen auf den Knopf "Optionen" (Es &ouml;ffnet sich das Optionsmen&uuml;)</li>
+			<li>Klicken Sie auf "Bearbeiten" um die gew&uuml;schte Version in den Designer zu laden</li>
+		</ol>
+
+		<h4 id="duplicate_sketch">Skizze duplizieren</h4>
+		<p>Um eine Skizze zu duplizieren, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Liste der Skizzen auf den Knopf "Optionen" (Es &ouml;ffnet sich das Optionsmen&uuml;)</li>
+			<li>Klicken Sie auf duplizieren, um eine neue Skizze aus dieser Skizze zu erstellen (Es &ouml;ffnet sich das Formular zur Erstellung einer neuen Skizze)</li>
+			<li>Geben Sie den Namen der neuen Skizze ein (Dieser muss sich vom Namen der aktuellen Skizze unterscheiden)</li>
+			<li>Geben Sie die Beschreibung der neuen Skizze ein</li>
+			<li>Klicken Sie auf "duplizieren" (Sie werden auf die Skizzen&uuml;bersicht umgeleitet)</li>
+		</ol>
+		<div class="alert alert-info">Sie k&ouml;nnen auch eine &auml;ltere Version einer Skizze duplizieren. Klicken Sie dazu auf den Knopf "Optionen" und w&auml;hlen Sie den Men&uuml;punkt "Versionen". Wiederholen Sie anschliessend die oben beschriebenen Schritte f&uuml;r die gew&uuml;schte Version.</div>
+
+		<h4 id="delete_sketch">Skizze l&ouml;schen</h4>
+		<p>Um eine Skizze zu l&ouml;schen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Liste der Skizzen auf den Knopf "Optionen" (Es &ouml;ffnet sich das Optionsmen&uuml;)</li>
+			<li>Klicken Sie auf l&ouml;schen, sofern Sie &uuml;ber die notwendigen <a href="#authority">Berechtigungen</a> verf&uuml;gen (Es &ouml;ffnet sich das Formular zur Erstellung einer neuen Skizze)</li>
+		</ol>
+		<div class="alert alert-warning">Achtung: Die Skizze wird direkt gel&ouml;scht.</div>
+		<div class="alert alert-info">Sie k&ouml;nnen eine Skizze nur l&ouml;schen, wenn Sie die Skizze erstellt haben (Unabh&auml;hngig davon, ob eine Drittperson eine neuere Version der Skizze erstellt hat. Einzelne Versionen einer Skizze k&ouml;nnen nicht entfernt werden.</div>
+
+
+		<h3 id="rawdata">Rohdaten</h3>
+		<p>Auf der Rohdaten-Seite werden Ihnen alle Rohdaten (hochgeladene Dateien) angezeigt, welche f&uuml;r dieses Projekt verf&uuml;gbar sind.</p>
+
+		<h4 id="upload_rawdata">Rohdaten hochladen</h4>
+		<p>Um Rohdaten hochzuladen gehen Sie wie folgt vor.</p>
+
+		<ol>
+			<li>Klicken Sie im Tab Rohdaten auf den Knopf "Rohdaten hochladen" (Es &ouml;ffnet sich das Formular zum hochladen einer Datei)</li>
+			<li>W&auml;hlen Sie eine Datei in dem Sie auf "Datei ausw&auml;hlen" klicken</li>
+			<li>Schreiben Sie eine Beschreibung zu der Datei</li>
+			<li>Klicken Sie auf "hochladen"</li>
+			<li>Sie k&ouml;nnen nun weitere Dateien hochladen, oder zur&uuml;ck zur &Uuml;bersicht wechseln</li>
+		</ol>
+		<div class="alert alert-info">
+			<ul>
+				<li>Die maximale Dateigr&ouml;sse betr&auml;gt 2 MB</li>
+				<li>Erlaubte Dateitypen sind: DOC, DOCX, XLS, XLSX und PDF</li>
+			</ul>
+		</div>
+
+
+		<h3 id="team">Team</h3>
+		<p>Auf der Team-Seite werden Ihnen alle Teammitglieder angezeigt, welche diesem Projekt zugewiesen sind.</p>
+
+
+		<h4 id="edit_team">Team bearbeiten</h4>
+		<p>Um das Team zu bearbeiten, gehen Sie wie folgt vor.</p>
+
+		<ol>
+			<li>Klicken Sie im Tab "Team" auf "Berechtigungen bearbeiten" (Es &ouml;ffnet sich das Formular zur Bearbeitung der Projektinformationen)</li>
+			<li>Bearbeiten Sie das Team mit Hilfe der nachstehenden Funktionen <a href="#add_user">Benutzer hinzuf&uuml;gen und entfernen</a> sowie <a href="add_admin">Administratoren hinzuf&uuml;gen und entfernen</a></li>
+		</ol>
+
+
+		<h4 id="add_user">Benutzer hinzuf&uuml;gen und entfernen</h4>
+		<p>Um Benutzer zum Projekt hinzuzuf&uuml;gen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Geben Sie den Namen des Benutzers im Suchfeld ein (Oberhalb der Benutzerliste)</li>
+			<li>F&uuml;gen Sie den Benutzer zum Projekt hinzu, in dem Sie auf "hinzuf&uuml;gen" klicken</li>
+			<li>Klicken Sie auf "Speichern", um die Einstellungen zu &uuml;bernehmen</li>
+		</ol>
+		<p>Um Benutzer vom Projekt zu entfernen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie in der Liste der Teammitglieder bei dem gew&uuml;schten Benutzer auf "entfernen" (Der Benutzer wird aus der Liste der Teammitglieder gel&ouml;scht und auf der Benutzerliste wieder eingetragen)</li>
+			<li>Klicken Sie auf "Speichern", um die Einstellungen zu &uuml;bernehmen</li>
+		</ol>
+
+		<h4 id="add_admin">Administratoren hinzuf&uuml;gen und entfernen</h4>
+		<p>Um Administratoren zum Projekt hinzuzuf&uuml;gen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Aktivieren Sie in der Liste der Teammitglieder die Checkbox vor dem gew&uuml;schten Benutzer, um diesem <a href="#admin">Administrator-Berechtigungen</a> zu verleihen</li>
+			<li>Klicken Sie auf "Speichern", um die Einstellungen zu &uuml;bernehmen</li>
+		</ol>
+		<p>Um Administratoren vom Projekt zu entfernen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Deaktivieren Sie in der Liste der Teammitglieder die Checkbox vor dem gew&uuml;schten Benutzer, um diesem die <a href="#admin">Administrator-Berechtigungen</a> zu entziehen</li>
+			<li>Klicken Sie auf "Speichern", um die Einstellungen zu &uuml;bernehmen</li>
+		</ol>
+
+
+		<h3 id="administrate">Administration</h3>
+		<p>Auf dieser Seite k&ouml;nnen Sie den Projektbesitzer &auml;ndern, sowie das gesamte Projekt l&ouml;schen</p>
+
+		<h4 id="change_owner">Projekteigent&uuml;mer &auml;ndern</h4>
+		<p>Um den Projektbesitzer zu &auml;ndern, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf die Dropdownliste (Die Liste &ouml;ffnet sich)</li>
+			<li>W&auml;hlen Sie den neuen Projektbesitzer aus</li>
+			<li>Klicken Sie auf "Speichern", um die &Auml;nderungen zu &uuml;bernehmen</li>
+		</ol>
+		<div class="alert alert-info">Der Projektbesitzer kann nur ge&auml;ndert werden, wenn das Team aus mindestens zwei Mitgliedern besteht.</div>
+
+		<h4 id="delete_project">Projekt l&ouml;schen</h4>
+		<p>Um ein Projekt zu &ouml;schen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf der Administrations-Seite auf l&ouml;schen (Es &ouml;ffnet sich ein Fenster, um sicher zu gehen, dass Sie das Projekt wirklich l&ouml;schen wollen)</li>
+			<li>Klicken Sie auf "Projekt l&ouml;schen", um das Projekt zu l&ouml;schen (Sie werden auf die Projekt&uuml;bersicht umgeleitet)</li>
+		</ol>
+
+	
+
+
+
+		<h2 id="designer">Designer</h2>
+		<p>Hier erhalten Sie n&auml;here Informationen zur Bedienung des Designers.</p>
+
+		<h3 id="add_element">Element zur Skizze hinzuf&uuml;gen</h3>
+		<p>Ziehen Sie mit Hilfe der Maus ein Element aus dem linken Bereich des Designer und lassen Sie es auf der Zeichenfl&auml;che "fallen".</p>
+
+
+		<h3 id="remove_element">Element von Skizze entfernen</h3>
+		<p>Um ein Element von Ihrer Skizze zu entfernen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das zu entfernende Element (Es &ouml;ffnen sich die Elementeigenschaften)</li>
+			<li>Klicken Sie im Bereich "Eigenschaften" (unterhalb der Skizze) auf l&ouml;schen</li>
+		</ol>
+		<div class="alert alert-info">Alternativ k&ouml;nnen Sie auch die "Entfernen"- bzw. "Delete"-Taste verwenden.</div>
+
+		<h3 id="change_layer">Element eine Ebene verschieben</h3>
+		<p>Um ein Element eine Ebene auf Ihrer Skizze zu verschieben, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das zu verschiebende Element (Es &ouml;ffnen sich die Elementeigenschaften)</li>
+			<li>Klicken Sie im Bereich "Eigenschaften" (unterhalb der Skizze) auf "Nach vorne", wenn Sie das Element eine Ebene weiter vorne anzeigen wollen</li>
+			<li>Klicken Sie im Bereich "Eigenschaften" (unterhalb der Skizze) auf "Nach hinten", wenn Sie das Element eine Ebene weiter hinten anzeigen wollen</li>
+		</ol>
+		<div class="alert alert-info">"Nach vorne" verschiebt ein Element vor alle anderen Elemente. "Nach hinten" verschiebt ein Element hinter alle anderen Elemente.</div>
+
+		<h3 id="change_properties">Elementeigenschaften &auml;ndern</h3>
+		<p>Um die Eigenschaften eines Elementes zu ver&auml;ndern, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das gew&uuml;schte Element (Es &ouml;ffnen sich die Elementeigenschaften)</li>
+			<li>&Auml;ndern Sie den Wert der Eigenschaft</li>
+		</ol>
+		<div class="alert alert-info">
+		Die &Auml;nderungen werden erst aktiv, wenn Sie eine der folgenden Aktionen durchf&uuml;hren<br />
+			<ul>
+				<li>Klicken Sie in einen leeren Skizzenbereich</li>
+				<li>Klicken Sie auf ein anderes Element</li>
+				<li>Dr&uuml;cken Sie die "Eingabe"- bzw. "Enter"-Taste</li>
+			</ul>
+		</div>
+		<div class="alert alert-warning">Wenn Sie eine &Auml;nderung gemacht haben und anschliessend direkt ein neues Element hinzuf&uuml;gen, werden die &Auml;nderungen nicht &uuml;bernommen.</div>
+
+		<h3 id="change_color">Elementfarbe &auml;ndern</h3>
+		<p>Um die Farbe eines Elementes zu ver&auml;ndern, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das gew&uuml;schte Element (Es &ouml;ffnen sich die Elementeigenschaften)</li>
+			<li>Klicken Sie im Bereich "Eigenschaften" (unterhalb der Skizze) auf die Dropdown-Liste "Farbe" (Es &ouml;ffnet sich der Colorpicker)</li>
+			<li>W&auml;hlen Sie die gew&uuml;schte Farbe aus</li>
+			<li>Klicken Sie auf OK um die Farbwahl anzuwenden</li>
+		</ol>
+
+		<h3 id="set_border">Elementrahmen setzen / entfernen</h3>
+		<p>Um einem Element einen Rahmen hinzuzuf&uuml;gen oder zu entfernen, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie auf das gew&uuml;schte Element (Es &ouml;ffnen sich die Elementeigenschaften)</li>
+			<li>Aktivieren oder deaktivieren Sie im Bereich "Eigenschaften" die Kontrollbox "Rahmen"</li>
+		</ol>
+		<div class="alert alert-info">Diese Funktion wird nur von Figuren unterst&uuml;tzt</div>
+
+		<h3 id="export_sketch">Skizze exportieren</h3>
+		<p>Um eine Skizze zu exportieren, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie &uuml;ber dem Skizzenbereich auf "Exportieren" (Es wird ein Bild erstellt)</li>
+			<li>Klicken Sie in Ihrem Browser auf "Datei -> Speichern"</li>
+		</ol>
+		<div class="alert alert-info">Alternativ k&ouml;nnen Sie auch das Kontextmen&uuml; benutzen, um das Bild zu speichern.</div>
+
+		<h3 id="save_sketch">Skizze speichern</h3>
+		<p>Um eine Skizze zu speichern, gehen Sie wie folgt vor.</p>
+		<ol>
+			<li>Klicken Sie &uuml;ber dem Skizzenbereich auf "Speichern" (Sie werden aufgefordert einen Kommentar zu dieser Version zu erstellen)</li>
+			<li>Schreiben Sie eine kurze Beschreibung der &Auml;nderungen in dieser Version</li>
+			<li>Klicken Sie auf OK (Sie werden informiert, dass die Skizze gespeichert wurde)</li>
+			<li>Klicken Sie auf OK (Sie werden auf die Versionen&uuml;bersicht umgeleitet)</li>
+		</ol>
+
+
+
+
+
+		<h2 id="authority">Berechtigungen</h2>
+		<p>Es gibt drei verschiedene Berechtigungstypen, welche in einem Projekt verf&uuml;gbar sind</p>
+		<ol>
+			<li><a href="#user">Benutzer</a></li>
+			<li><a href="#admin">Administrator</a></li>
+			<li><a href="#owner">Projektbesitzer</a></li>
+		</ol>
+
+		<h3 id="user">Benutzer</h3>
+		<p>Ein Benutzer hat die niedrigste Berechtigungsauspr&auml;gung. Er hat Berechtigungen um folgendes zu tun.</p>
+		<ul>
+			<li>Projektinfos bearbeiten (Anforderungen)</li>
+			<li>Neue Skizze erstellen</li>
+			<li>Eigene Skizzen l&ouml;schen</li>
+			<li>Rohdaten hochladen</li>
+			<li>Rohdaten l&ouml;schen</li>
+			<li>Teamliste anzeigen</li>
+		</ul>
+
+		<h3 id="admin">Administrator</h3>
+		<p>Ein Administrator hat erweiterte Berechtigungen (Alle Berechtigungen des Benutzers + weitere)</p>
+		<ul>
+			<li>Projektinfos bearbeiten (Anforderungen, Team)</li>
+			<li>Neue Skizze erstellen</li>
+			<li>Eigene Skizzen l&ouml;schen</li>
+			<li>Rohdaten hochladen</li>
+			<li>Rohdaten l&ouml;schen</li>
+			<li>Teamliste anzeigen</li>
+			<li>Teamliste bearbeiten (hinzuf&uuml;gen und entfernen von Benutzern, sowie Vergabe der <a href="#admin">Administrator-Berechtigungen</a>)</li>
+		</ul>
+
+		<h3 id="owner">Projektbesitzer</h3>
+		<p>Ein Projektbesitzer hat alle Berechtigungen (Alle Berechtigungen des Administrators + weitere)</p>
+		<ul>
+			<li>Projektinfos bearbeiten (Anforderungen, Team, Projektname und Projektbeschreibung)</li>
+			<li>Neue Skizze erstellen</li>
+			<li>Alle Skizzen l&ouml;schen</li>
+			<li>Rohdaten hochladen</li>
+			<li>Rohdaten l&ouml;schen</li>
+			<li>Teamliste anzeigen</li>
+			<li>Teamliste bearbeiten (hinzuf&uuml;gen und entfernen von Benutzern, sowie Vergabe der <a href="#admin">Administrator-Berechtigungen</a>)</li>
+			<li>Projektbesitzer &auml;ndern</li>
+			<li>Projekt l&ouml;schen</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
